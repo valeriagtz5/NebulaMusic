@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nébula Music - Registro</title>
+    </head>
+
+    <body>
+        <main class="auth-container">
+            <section class="auth-card">
+
+                <form class="auth-form" method="post" action="/crear-cuenta" enctype="application/x-www-form-urlencoded">
+
+                    <div class="form-logo">
+                        <img src="./imgs/nebula-03.svg" alt="Logo Nébula">
+                    </div>
+
+                    <div class="form-header">
+                        <h3>Crear Cuenta</h3>
+                        <p class="form-subtitle">Completa los datos para registrate</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" minlength="3" placeholder="Tu nombre">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Tu correo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contrasenia">Contraseña:</label>
+                        <input type="password" id="contrasenia" name="contrasenia" placeholder="Tu contrasenia">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="txt_pseudonimo">Pseudonimo</label>
+                    <input
+                            type="text"
+                            id="txt_pseudonimo"
+                            name="txt_pseudonimo"
+                            pattern="[a-zA-Z]{3,10}-[0,9]{2,10}"
+                            placeholder="Tu pseudonimo"
+                    >
+                    </div>
+
+
+
+                    <label>Genero:</label>
+                    <br>
+                    <input type="radio" id="masculino" name="rad_genero" value="M">
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" id="femenino" name="rad_genero" value="F">
+                    <label for="femenino">Femenino</label>
+
+                    <input type="radio" id="otro" name="rad_genero" value="O">
+                    <label for="otro">Otro</label>
+
+                    <br><br>
+
+                    <label for="suscripcion">Suscripción:</label>
+                    <select id="suscripcion" name="sel_suscripcion">
+                        <option value="gratis">Gratis</option>
+                        <option value="mensual">Mensual</option>
+                        <option value="anual">Anual</option>
+                    </select>
+
+                    <br><br>
+
+                    <div class="form-group">
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fechaNacimiento">
+                    </div>
+                    <br><br>
+
+                    <input type="checkbox" id="terminos" name="chk_terminos" value="aceptado">
+                    <label for="terminos">Acepto los términos y condiciones</label>
+
+                    <br><br>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <br>
+                    <textarea
+                            id="comentarios"
+                            name="comentarios"
+                            rows="4" cols="40"
+                            placeholder="Escribe aquí tus comentarios...">
+                    </textarea>
+
+
+                    <!-- Botones -->
+                    <div class="form-group">
+                        <button type="submit" class="btn-primary">Iniciar Sesión</button>
+                        <button type="reset" class="btn-secondary">Cancelar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
