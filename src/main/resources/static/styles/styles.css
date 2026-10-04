@@ -242,3 +242,18 @@ button {
     }
 
 }
+
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group-inline label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #CBD5E0;
+    cursor: pointer;
+    margin-bottom: 0;
+}
